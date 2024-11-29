@@ -1,0 +1,13 @@
+{% load static %}
+{% block content %}
+<div class="container">
+    <h4 align="center">Bem-vindo</h4>
+    <br>
+    <h1>Gráfico Gerado com Dados do Dataset.</h1>
+    <div class="task-list">
+        {% for grafico in graficos_html %}
+        <div>{{ grafico|safe }}</div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
